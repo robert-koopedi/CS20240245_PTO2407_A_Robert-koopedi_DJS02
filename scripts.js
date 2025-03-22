@@ -21,3 +21,7 @@ function validateInput(dividend, divider) {
   return null; 
 }
 
+function performDivision(dividend, divider) {
+  let quotient = dividend / divider;
+  return Number.isInteger(quotient) ? quotient : Math.trunc(quotient);
+}
